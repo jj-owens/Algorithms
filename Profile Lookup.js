@@ -30,16 +30,16 @@ var contacts = [
 
 function lookUpProfile(firstName, prop){
 // Only change code below this line
-    var name = contacts.filter(function (object){
+    var contact = contacts.filter(function (object){
         if(object.firstName === firstName){
             return object.firstName;
         }
     })[0];
 
-    if(!name){
+    if(!contact){
         return "No such contact";
     } else {
-        return name[prop] || "No such property";
+        return contact[prop] || "No such property";
     }
 
 // Only change code above this line
